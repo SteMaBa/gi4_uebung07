@@ -38,7 +38,7 @@ all:
 	$(MAKE) $(NAME)
 
 $(NAME): $(OBJS)
-	$(CC) $(CFLAGS) -o $(NAME) $(OBJS) $(LDFLAGS)
+	$(CC) $(CFLAGS) -o $(NAME) $(OBJS) -lm $(LDFLAGS)
 
 clean:
 	$(RM) *.o $(NAME)
